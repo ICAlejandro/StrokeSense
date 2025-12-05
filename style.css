@@ -1,9 +1,57 @@
+/* ================= cover photo ==================*/
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 50vh; /* limit size to the header */
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background image only in CSS */
+  background-image: url('assets/cover-img.jpg');
+  background-size: cover;        /* fill the header */
+  background-position: center;   /* center the image */
+  background-repeat: no-repeat;
+
+  /* optional overlay for better text readability */
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+}
+
 /* style.css */
+h2 {
+  font-family: 'Matatas One', 'Montserrat', Arial, sans-serif;
+  font-size: 40px;               
+  color: #4c4022;
+  text-align: left;
+  margin: 30px 0 20px 0;        
+  padding-bottom: 3%;
+  border-bottom: 2px solid #4c4022;
+  font-style: italic;            
+}
+
+
+li {
+  margin: 20px 0;
+}
+
+.quote {
+  border-top: 2px solid #4c4022;     
+  border-bottom: 2px solid #4c4022;  
+  padding: 20px 0;                    
+  text-align: center;                 
+  margin: 40px;       
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Matatas One', 'Montserrat', Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  z-index: 999;
 }
 
 .hero {
@@ -14,9 +62,9 @@ body {
 
 .cta {
   padding: 15px 30px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
+  font-size: 1.2rem;
+  background-color: #f5f900;
+  color: rgb(93, 66, 5);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -25,21 +73,20 @@ body {
 .features {
   display: flex;
   justify-content: space-around;
-  padding: 50px 20px;
+  padding: 50px 30px;
 }
 
 .feature-card {
   flex: 1;
   margin: 0 10px;
   padding: 20px;
-  background: #ffffff;
-  border: 1px solid #ddd;
+  background: rgba(170, 145, 46, 0.5);
   border-radius: 8px;
   text-align: center;
 }
 
 .visual img {
-  width: 100%;
+  width: 20%;
   max-width: 800px;
   display: block;
   margin: 0 auto;
@@ -47,6 +94,11 @@ body {
 
 .info {
   padding: 50px 20px;
+  margin: 10% auto;
+  background-color: rgba(170, 145, 46, 0.5);
+  border: 10px;
+  border-radius: 10px;
+  max-width: 80%;
 }
 
 .cta-final {
